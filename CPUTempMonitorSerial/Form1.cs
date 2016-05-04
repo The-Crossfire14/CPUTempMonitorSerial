@@ -122,7 +122,7 @@ namespace CPUTempMonitorSerial
                         if (sensor.SensorType == SensorType.Temperature)
                         {
                             int sensorValue = (int)sensor.Value;
-                            outputText = String.Format("{0} Temperature: {1}", "CPU", sensor.Value.HasValue ? sensorValue.ToString() + "^C" : "no value");
+                            outputText = String.Format("{0} Temp: {1}", "CPU", sensor.Value.HasValue ? sensorValue.ToString() + "^C" : "no value");
                         }
                     }
                 }
@@ -189,7 +189,7 @@ namespace CPUTempMonitorSerial
                         if (sensor.SensorType == SensorType.Temperature)
                         {
                             int sensorValue = (int)sensor.Value;
-                            outputText = String.Format("{0} Temperature: {1}", "GPU", sensor.Value.HasValue ? sensorValue.ToString() + "^C" : "no value");
+                            outputText = String.Format("{0} Temp: {1}", "GPU", sensor.Value.HasValue ? sensorValue.ToString() + "^C" : "no value");
 
                         }
                     }
