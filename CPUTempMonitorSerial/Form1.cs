@@ -28,7 +28,7 @@ namespace CPUTempMonitorSerial
             //sets arduinoSerial to a new serial port
             arduinoSerial = new SerialPort();
             //sets the port name to COMx
-            arduinoSerial.PortName = "COM3";
+            arduinoSerial.PortName = "COM4";
             //starts the serial port
             arduinoSerial.Open();
 
